@@ -100,7 +100,9 @@ Java代码:
 
 可以看到, 编译器在将 int 值赋给 Integer 时，自动进行了 Integer.valueOf 包装。
 
-而在将 Integer 转换为 int 时,使用的是 num1.intValue() 这种形式。
+而在将 Integer 转换为 int 时,使用的是 num1.intValue() 这种形式。 
+
+此外, 对象的 Integer 属性域默认值为 null, 所以在和 int 比较时,可能需要进行非 null 判断。
 
 
 这就是 Java的自动包装/解包 机制。
